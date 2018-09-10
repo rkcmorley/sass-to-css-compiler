@@ -1,0 +1,7 @@
+$background-colors: (background-color1: blue, background-color2:black, background-color3: red);
+@each $key,
+$background-color in $background-colors {
+    .#{$background-color}-bg {
+        background-color: $background-color;
+    }
+}

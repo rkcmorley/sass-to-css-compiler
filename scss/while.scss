@@ -1,0 +1,7 @@
+$textSize: 1;
+@while $textSize < 11 {
+    .text-#{$textSize} {
+        font-size: 50/10 * $textSize;
+        $textSize: $textSize+1;
+    }
+}
